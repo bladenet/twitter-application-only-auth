@@ -38,10 +38,8 @@ class Client(object):
 
         request = Request(url)
         request.add_header('Authorization', 'Bearer %s' % self.access_token)
-        try:
-            response = urlopen(request)
-        except HTTPError:
-            raise ClientException
+        #@ezovski: Removing exception handling here. I want to be able to act on 401.
+        response = urlopen(request)
 
         raw_data = response.read().decode('utf-8')
         data = json.loads(raw_data)
