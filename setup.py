@@ -9,7 +9,7 @@ setup(name='twitter-application-only-auth',
       version='0.3.1',
       author='Pablo SEMINARIO',
       author_email='pablo@seminar.io',
-      url='git://github.com/bladenet/twitter-application-only-auth',
+      url='https://github.com/bladenet/twitter-application-only-auth',
       description='A simple implementation of '
       'the Twitter Application-only authentication',
       long_description=long_description,
